@@ -19,7 +19,7 @@
  .portal-header {
      background: linear-gradient(var(--primary-color));
      color: white;
-     padding: 15px 0;
+     padding: 8px 0;
      box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
      position: relative;
      overflow: hidden;
@@ -148,8 +148,8 @@
 
  .current-info .info-label {
      position: absolute;
-     left: 0;
-     top: 0;
+     left: 0px;
+     top: 0px;
      padding: 8px 16px;
      display: inline-block;
      padding: 8px 20px;
@@ -239,6 +239,7 @@
      cursor: pointer;
      margin-bottom: 15px;
      overflow: hidden;
+     position: relative;
  }
 
  .farm-card:hover {
@@ -599,4 +600,26 @@
 
  footer .design-dev:hover {
      text-decoration: underline;
+ }
+
+
+ @media (max-width:768px) {
+     body {
+         font-size: 14px;
+     }
+
+     .form-section {
+         padding: 16px;
+     }
+
+     .btn-agri {
+         background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+         color: white;
+         padding: 8px 10px;
+         border-radius: 8px;
+         font-weight: 600;
+         border: none;
+         transition: all 0.3s;
+         font-size: 12px;
+     }
  }
