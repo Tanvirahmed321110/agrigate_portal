@@ -46,7 +46,6 @@
      border: none;
      overflow: hidden;
      margin-bottom: 25px;
-     border: 8px solid white;
  }
 
  .portal-card-header {
@@ -54,7 +53,7 @@
      color: var(--dark-green);
      padding: 20px;
      border-bottom: none;
-     border-bottom: 8px solid white;
+     border: 10px solid #fff;
      border-radius: 16px 16px 0 0;
      border-radius: 16px;
  }
@@ -69,7 +68,7 @@
  }
 
  .badge-active {
-     background-color: rgba(255, 255, 255, 0.303);
+     background-color: #fff;
      color: #555;
  }
 
@@ -138,6 +137,43 @@
      border: 1px solid #c8e6c9;
      transition: all 0.3s;
      height: 72%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .current-info .info-box .info-value {
+     padding-bottom: 24px !important;
+     margin-top: 8px;
+ }
+
+ .current-info .info-label {
+     position: absolute;
+     left: 0;
+     top: 0;
+     padding: 8px 16px;
+     display: inline-block;
+     padding: 8px 20px;
+     font-weight: 700;
+     font-size: .75rem;
+     border: 2px solid #c8e6c9;
+     border-top: none;
+     border-left: 0;
+     background-color: white;
+     border-radius: 2px 0 20px 2px;
+     color: var(--primary-color);
+     word-spacing: 3px;
+     letter-spacing: .3px;
+ }
+
+ .current-info .info-value {
+     margin-top: 12px !important;
+     padding-top: 22px;
+ }
+
+ .feed-cards .info-label {
+     position: absolute;
+     right: 0;
+     top: 0;
  }
 
  .info-box:hover {
@@ -153,6 +189,41 @@
      letter-spacing: 0.5px;
      opacity: .8;
  }
+
+ .feed-cards .info-label {
+     position: absolute;
+     right: 0;
+     top: 0;
+     display: inline-block;
+     padding: 8px 20px;
+     /* background-color: wheat;
+     border: 3px solid white; */
+     font-weight: 700;
+     font-size: .9rem;
+     border: 2px solid #c8e6c9;
+     border-top: none;
+     border-right: 0;
+     background-color: white;
+     border-radius: 0px 0 0px 22px;
+     color: var(--primary-color);
+     word-spacing: 3px;
+     letter-spacing: .3px;
+ }
+
+ .feed-cards .info-box {
+     height: fit-content;
+     position: relative;
+     padding-top: 44px;
+     overflow: hidden;
+ }
+
+ .feed-cards .title {
+     text-transform: uppercase;
+     color: var(--secondary-color);
+     font-size: .75rem;
+     margin-bottom: 2px;
+ }
+
 
  .info-value {
      font-weight: 600;
@@ -319,6 +390,11 @@
      border: 1px solid #ddd;
  }
 
+ .km-input-group input:focus {
+     box-shadow: none;
+     box-shadow: 0 0 0 0.18rem rgba(46, 125, 50, 0.25);
+ }
+
  .km-label {
      font-size: 0.85rem;
      font-weight: 600;
@@ -326,11 +402,15 @@
      margin-bottom: 5px;
  }
 
+ .table.data-table {
+     margin-bottom: 0;
+ }
+
  /* Image Preview */
  .image-preview {
      border: 2px dashed #ccc;
      border-radius: 10px;
-     min-height: 120px;
+     min-height: 170px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -354,24 +434,26 @@
  .data-table {
      border-radius: 10px;
      overflow: hidden;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
  }
 
- .data-table thead {
-     background-color: var(--primary-color);
-     color: white;
- }
+
 
  .data-table th {
      font-weight: 600;
      padding: 15px;
      border: none;
+     background-color: rgba(245, 222, 179, 0.347);
  }
 
  .data-table td {
      padding: 12px 15px;
      vertical-align: middle;
  }
+
+ .data-table tbody tr {
+     border-bottom: 1px solid var(--white-off-2);
+ }
+
 
  /* Alert Boxes */
  .alert-agri {

@@ -16,90 +16,7 @@
 
     <body>
 
-        <main class="">
-            <div class="container login-container" style="display: none;">
-                <div class="login-card">
-                    <div class="login-header">
-                        <div class="login-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h3 class="mb-2">Portal Authentication</h3>
-                        <p class="mb-0 opacity-75">Line Supervisor & Accountant Access Only</p>
-                    </div>
-
-                    <div class="card-body p-4 p-md-5">
-                        <form action="#" method="post">
-                            <div class="mb-4">
-                                <label for="userRole" class="form-label required">User Role</label>
-                                <select class="form-select" id="userRole" name="userRole" required>
-                                    <option value="" selected disabled>-- Select Your Role --</option>
-                                    <option value="line_supervisor">Line Supervisor</option>
-                                    <option value="accountant">Accountant</option>
-                                </select>
-                                <div class="form-text">Access permissions vary by role</div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="username" class="form-label required">Username</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                    <input type="text" class="form-control" id="username" name="username"
-                                        placeholder="Enter your username" required>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="password" class="form-label required">Password</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
-                                    <input type="password" class="form-control" id="password" name="password"
-                                        placeholder="Enter your password" required>
-                                    <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                                        <i class="fas fa-eye"></i>
-                                    </button>
-                                </div>
-                                <div class="progress mt-2">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
-                                </div>
-                                <div class="form-text">Password strength: <span class="text-success">Strong</span>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe">
-                                    <label class="form-check-label" for="rememberMe">
-                                        Remember me on this device
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-agri">
-                                    <i class="fas fa-sign-in-alt me-2"></i>Login to Portal
-                                </button>
-
-                                <a href="#forgot-password" class="btn btn-outline-agri">
-                                    <i class="fas fa-question-circle me-2"></i>Forgot Password?
-                                </a>
-                            </div>
-                        </form>
-
-                        <div class="mt-4 pt-3 border-top">
-                            <div class="alert alert-agri">
-                                <h6 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Portal Information
-                                </h6>
-                                <p class="mb-2 small">This portal is designed for Daily-Consumption entry including
-                                    DOC-Mortality and Feed-Consumption data.</p>
-                                <p class="mb-0 small"><strong>Access:</strong> Line-Supervisor (entry) & Accountant
-                                    (monitor)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
+        <!--==============================||  Header Here  ||============================-->
         <header class="portal-header">
             <div class="container">
                 <div class="row align-items-center">
@@ -119,8 +36,13 @@
             </div>
         </header>
 
+
+
+
+        <!--==============================||  Main Content Here  ||============================-->
         <main class="py-4">
             <div class="container">
+
                 <!-- Main Dashboard Card -->
                 <div class="main-card">
                     <div class="portal-card-header">
@@ -142,7 +64,7 @@
                     </div>
 
                     <div class="card-body p-4">
-                        <!-- Tabs for Navigation -->
+                        <!--=========== Tabs for Navigation ============-->
                         <ul class="nav nav-tabs mb-4" id="portalTabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="farm-tab" data-bs-toggle="tab"
@@ -164,9 +86,11 @@
                             </li>
                         </ul>
 
-                        <!-- Tab Content -->
+                        <!--=======================   Tab Contents Here   ====================-->
                         <div class="tab-content" id="portalTabsContent">
-                            <!-- Farm Selection Tab -->
+
+
+                            <!--=========================  Farm Selection Tab Content  ======================-->
                             <div class="tab-pane fade show active" id="farm" role="tabpanel">
                                 <div class="form-section">
                                     <h4 class="section-title">
@@ -207,6 +131,8 @@
                                             </div>
                                         </div>
 
+
+                                        <!--=========== Location Track Inside Outside Button ==========-->
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <div class="d-flex">
@@ -217,7 +143,7 @@
 
 
                                                         </div>
-                                                        <span> Location track</span>
+                                                        <span> Location Track</span>
                                                     </label>
                                                 </div>
                                                 <div class="btn-group inside-outside-btns w-100" role="group">
@@ -241,6 +167,8 @@
                                     </div>
 
                                     <div class="row  align-items-end pb-5" style="align-items: stretch !important;">
+
+                                        <!--==========  Bike Entry Here  ==========-->
                                         <div class=" col-md-6">
                                             <div class="">
                                                 <div class="d-flex">
@@ -275,7 +203,7 @@
                                         </div>
 
 
-                                        <!-- selected farm details -->
+                                        <!--==========  selected farm details  ==========-->
                                         <div class="col-md-6">
                                             <div
                                                 class="form-label d-flex  align-items-center justify-content-start  gap-2">
@@ -295,6 +223,7 @@
                                                             <span class="info-value">Farm A-12</span>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-3">
                                                         <div class="">
                                                             <span class="info-label">Batch ID:</span>
@@ -303,6 +232,7 @@
                                                             <span class="info-value">#343443434</span>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-3 ">
                                                         <div class="">
                                                             <span class="info-label">Start Date:</span>
@@ -311,6 +241,7 @@
                                                             <span class="info-value">15 Jan 2025</span>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-3 ">
                                                         <div class="">
                                                             <span class="info-label">Other:</span>
@@ -325,9 +256,11 @@
                                         </div>
                                     </div>
 
+
+                                    <!--==================  Active Farms Here  ================-->
                                     <h5 class="mb-3">Active Farms/Batches</h5>
                                     <div class="row">
-                                        <!-- Farm Card 1 -->
+                                        <!--========== Single Farm Card 1 =========-->
                                         <div class="col-md-6">
                                             <div class="farm-card active">
                                                 <div
@@ -370,7 +303,93 @@
                                             </div>
                                         </div>
 
-                                        <!-- Farm Card 2 -->
+                                        <!--========== Single Farm Card 1 =========-->
+                                        <div class="col-md-6">
+                                            <div class="farm-card">
+                                                <div
+                                                    class="farm-card-header d-flex justify-content-between align-items-center">
+                                                    <h6 class="mb-0">Farm B-07</h6>
+                                                    <span class="farm-status badge-success">Active</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Batch
+                                                                    ID:</small></p>
+                                                            <p class="mb-2"><strong>B-2023-09-20</strong></p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Start
+                                                                    Date:</small></p>
+                                                            <p class="mb-2"><strong>2023-09-20</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Birds:</small>
+                                                            </p>
+                                                            <p class="mb-0"><span class="badge bg-success">1500
+                                                                    pcs</span></p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Age:</small>
+                                                            </p>
+                                                            <p class="mb-0"><span class="badge bg-info">7
+                                                                    days</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end mt-3">
+                                                        <button class="btn btn-sm btn-agri">Select This
+                                                            Farm</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--========== Single Farm Card 1 =========-->
+                                        <div class="col-md-6">
+                                            <div class="farm-card">
+                                                <div
+                                                    class="farm-card-header d-flex justify-content-between align-items-center">
+                                                    <h6 class="mb-0">Farm B-07</h6>
+                                                    <span class="farm-status badge-success">Active</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Batch
+                                                                    ID:</small></p>
+                                                            <p class="mb-2"><strong>B-2023-09-20</strong></p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Start
+                                                                    Date:</small></p>
+                                                            <p class="mb-2"><strong>2023-09-20</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Birds:</small>
+                                                            </p>
+                                                            <p class="mb-0"><span class="badge bg-success">1500
+                                                                    pcs</span></p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-1"><small class="text-muted">Age:</small>
+                                                            </p>
+                                                            <p class="mb-0"><span class="badge bg-info">7
+                                                                    days</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end mt-3">
+                                                        <button class="btn btn-sm btn-agri">Select This
+                                                            Farm</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--========== Single Farm Card 1 =========-->
                                         <div class="col-md-6">
                                             <div class="farm-card">
                                                 <div
@@ -416,51 +435,51 @@
                                 </div>
                             </div>
 
-                            <!-- Mortality Entry Tab -->
+
+
+
+
+                            <!--============================  Mortality Entry  Tab Content  ===========================-->
                             <div class="tab-pane fade" id="mortality" role="tabpanel">
                                 <div class="form-section">
                                     <h4 class="section-title">
                                         <i class="fas fa-dove"></i>Mortality Day-Consumption Entry
                                     </h4>
 
-                                    <div class="alert alert-warning">
-                                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Previous Entries</h6>
-                                        <p class="mb-0">If mistakes in entry, max 3 previous day's entries can be
-                                            viewed for reference.</p>
-                                    </div>
+                                    <h5 class="mb-3 text-success">Current Stock Information</h5>
 
-                                    <h5 class="mb-3 text-success">Current Stock Information (Read Only)</h5>
-                                    <div class="row mb-4">
-                                        <div class="col-md-3">
+                                    <!--=======  Current Info Carts Here  =======-->
+                                    <div class="row mb-4 current-info">
+                                        <div class="col-md-3 px-2">
                                             <div class="info-box">
                                                 <div class="info-label">Received Birds</div>
                                                 <div class="info-value">1000 pcs</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3 px-2">
                                             <div class="info-box">
                                                 <div class="info-label">Birds Age</div>
                                                 <div class="info-value">12 days</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3  px-2 ">
                                             <div class="info-box">
                                                 <div class="info-label">Mortality Stock</div>
                                                 <div class="info-value">5 pcs</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-3  px-2">
                                             <div class="info-box">
                                                 <div class="info-label">Current Stock</div>
                                                 <div class="info-value">995 pcs</div>
-                                                <div class="small text-muted">1000 - 5 = 995 pcs</div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <h5 class="mb-3 text-success">Mortality Entry (Input)</h5>
+                                    <h5 class="mb-2 text-success">Mortality Entry (Input)</h5>
+                                    <!--=========  input entry here ========= -->
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="mortalityEntry" class="form-label required">Mortality
                                                     Entry (pcs)</label>
@@ -468,8 +487,6 @@
                                                     max="50" value="0">
                                                 <div class="form-text">Enter today's mortality count</div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-4">
                                             <div class="mb-3">
                                                 <label for="mortalityReason" class="form-label required">Reason</label>
                                                 <select class="form-select" id="mortalityReason">
@@ -482,23 +499,34 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+
+                                        <!-- image file here -->
+                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label class="form-label">Image Attachments</label>
-                                                <div class="image-preview">
-                                                    <div class="text-center">
-                                                        <div class="upload-icon">
-                                                            <i class="fas fa-cloud-upload-alt"></i>
-                                                        </div>
-                                                        <p class="mb-1">Click to upload image</p>
-                                                        <small class="text-muted">JPG format, max 5MB</small>
+
+                                                <!-- Hidden file input -->
+                                                <input type="file" id="imageUpload" class="d-none"
+                                                    accept="image/jpeg,image/jpg">
+
+                                                <!-- Clickable upload area -->
+                                                <label for="imageUpload" class="image-preview text-center w-100"
+                                                    style="display: flex;flex-direction: column;">
+                                                    <div class="upload-icon">
+                                                        <i class="fas fa-cloud-upload-alt"></i>
                                                     </div>
-                                                </div>
+                                                    <p class="mb-1 fw-medium">Click to upload image</p>
+                                                    <div class="text-muted">JPG format, max 5MB</div>
+                                                </label>
                                             </div>
+
                                         </div>
                                     </div>
 
+
+
                                     <h6 class="mt-4 mb-3 text-muted">Previous 3 Days Entries (Read Only)</h6>
+                                    <!--==========  Previous 3 Days Tables  ========-->
                                     <div class="table-responsive">
                                         <table class="table data-table">
                                             <thead>
@@ -538,29 +566,34 @@
                                 </div>
                             </div>
 
-                            <!-- Feed Entry Tab -->
+
+
+
+
+                            <!--============================  Feed Entry Tab  ============================-->
                             <div class="tab-pane fade" id="feed" role="tabpanel">
                                 <div class="form-section">
                                     <h4 class="section-title">
                                         <i class="fas fa-seedling"></i>Feed Day-Consumption Entry
                                     </h4>
 
-                                    <div class="row mb-4">
+                                    <div class="row mb-4 feed-cards">
                                         <div class="col-md-4">
+                                            <!--======= Received Stock ========-->
                                             <div class="info-box">
                                                 <div class="info-label">Received Stock</div>
-                                                <div class="info-value mt-2">
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Starter:</span>
-                                                        <span class="fw-bold">300 kg</span>
+                                                <div class="info-value mt-3 row">
+                                                    <div class="col-4">
+                                                        <div class="title">Starter</div>
+                                                        <div class=" val">300 <span>kg</span></div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Grower:</span>
-                                                        <span class="fw-bold">300 kg</span>
+                                                    <div class="col-4">
+                                                        <div class="title">Grower:</div>
+                                                        <div class="val">300 kg</div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Finisher:</span>
-                                                        <span class="fw-bold">400 kg</span>
+                                                    <div class="col-4">
+                                                        <div class="title">Finisher:</div>
+                                                        <span class="val">400 kg</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -568,56 +601,52 @@
                                         <div class="col-md-4">
                                             <div class="info-box">
                                                 <div class="info-label">Consumption Stock</div>
-                                                <div class="info-value mt-2">
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Starter:</span>
-                                                        <span class="fw-bold">100 kg</span>
+                                                <div class="info-value mt-3 row">
+                                                    <div class="col-4">
+                                                        <div class="title">Starter</div>
+                                                        <div class=" val">300 <span>kg</span></div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Grower:</span>
-                                                        <span class="fw-bold">50 kg</span>
+                                                    <div class="col-4">
+                                                        <div class="title">Grower:</div>
+                                                        <div class="val">300 kg</div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Finisher:</span>
-                                                        <span class="fw-bold">90 kg</span>
+                                                    <div class="col-4">
+                                                        <div class="title">Finisher:</div>
+                                                        <span class="val">400 kg</span>
                                                     </div>
                                                 </div>
-                                                <div class="small text-muted mt-2">Including IFT updates</div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="info-box">
                                                 <div class="info-label">Current Stock</div>
-                                                <div class="info-value mt-2">
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Starter:</span>
-                                                        <span class="fw-bold">200 kg</span>
+                                                <div class="info-value mt-3 row">
+                                                    <div class="col-4">
+                                                        <div class="title">Starter</div>
+                                                        <div class=" val">300 <span>kg</span></div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Grower:</span>
-                                                        <span class="fw-bold">250 kg</span>
+                                                    <div class="col-4">
+                                                        <div class="title">Grower:</div>
+                                                        <div class="val">300 kg</div>
                                                     </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <span>Finisher:</span>
-                                                        <span class="fw-bold">310 kg</span>
+                                                    <div class="col-4">
+                                                        <div class="title">Finisher:</div>
+                                                        <span class="val">400 kg</span>
                                                     </div>
                                                 </div>
-                                                <div class="small text-muted mt-2">300-100=200 | 300-50=250 |
-                                                    400-90=310</div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <h5 class="mb-3 text-success">Feed Entry (Input)</h5>
+                                    <h5 class="mb-2 text-success">Feed Entry (Input)</h5>
                                     <p class="text-muted mb-4">Showing stock item-wise: 1. Starter, 2. Grower, 3.
                                         Finisher</p>
 
-                                    <!-- Starter Feed -->
+                                    <!--======== Starter Feed ========-->
                                     <div class="feed-item">
                                         <div class="row align-items-center">
                                             <div class="col-md-3">
                                                 <h6 class="mb-0"><span class="feed-number">1</span>Starter Feed</h6>
-                                                <small class="text-muted">Standard: 0.6kg per chick</small>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="info-box py-2">
@@ -634,7 +663,6 @@
                                                         <input type="text" class="form-control" value="60 kg" readonly>
                                                         <span class="input-group-text bg-light">kg</span>
                                                     </div>
-                                                    <div class="form-text">Based on 0.6kg per chick</div>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
@@ -651,7 +679,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Grower Feed -->
+                                    <!--========= Grower Feed =========-->
                                     <div class="feed-item">
                                         <div class="row align-items-center">
                                             <div class="col-md-3">
@@ -673,7 +701,6 @@
                                                         <input type="text" class="form-control" value="150 kg" readonly>
                                                         <span class="input-group-text bg-light">kg</span>
                                                     </div>
-                                                    <div class="form-text">Based on 1.5kg per chick</div>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
@@ -690,7 +717,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Finisher Feed -->
+                                    <!--======= Finisher Feed ==========-->
                                     <div class="feed-item">
                                         <div class="row align-items-center">
                                             <div class="col-md-3">
@@ -713,7 +740,6 @@
                                                         <input type="text" class="form-control" value="110 kg" readonly>
                                                         <span class="input-group-text bg-light">kg</span>
                                                     </div>
-                                                    <div class="form-text">Based on 1.1kg per chick</div>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
@@ -730,39 +756,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Bag Consumption Calculation -->
-                                    <div class="alert alert-agri mt-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-8">
-                                                <h6 class="mb-2"><i class="fas fa-calculator me-2"></i>Bag
-                                                    Consumption Calculation</h6>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-1">Total Feed Consumption:</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-1 fw-bold">320 kg</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-0">Bag Conversion (50kg = 1 bag):</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p class="mb-0 fw-bold">6.4 bags</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 text-end">
-                                                <div class="info-box py-3">
-                                                    <div class="row">
-                                                        <div class="col-6 info-label">Total Bags:</div>
-                                                        <div class="col-6 info-value">6.4 bags</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <!-- Note Section -->
                                     <div class="mt-4 p-3 border rounded">
@@ -777,16 +770,18 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <!-- Action Buttons -->
+                        <!--=============  Submit and Return Button ==========-->
                         <div class="d-flex justify-content-between mt-4 pt-3 border-top">
+                            <!-- Return Button -->
                             <div>
                                 <button type="button" class="btn btn-outline-agri">
                                     <i class="fas fa-undo me-2"></i>Return Form (Accountant Only)
                                 </button>
                             </div>
+
+                            <!-- Submit Button -->
                             <div>
                                 <button type="button" class="btn btn-agri">
                                     <i class="fas fa-paper-plane me-2"></i>Submit Consumption Entry
@@ -798,7 +793,9 @@
             </div>
         </main>
 
-        <!-- Footer -->
+
+
+        <!--==============================||  Footer Here  ||============================-->
         <footer class="portal-footer">
             <div class="container">
                 <div class="row">
